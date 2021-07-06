@@ -26,8 +26,8 @@ public class ChatApplication extends Application {
 
         // Set applicationId and server based on the values in the Back4App settings.
         Parse.initialize(new Parse.Configuration.Builder(this)
-                .applicationId("BgMeRhXN4Mfsr4iu7cg2PJPITPJgn9T4meopyWPG") // ⚠️ TYPE IN A VALID APPLICATION ID HERE
-                .clientKey("r6fZMD0BL8dZx0pVlYemVJbHwqaBtIRqO19SX40c") // ⚠️ TYPE IN A VALID CLIENT KEY HERE
+                .applicationId(getString(R.string.app_id)) // ⚠️ TYPE IN A VALID APPLICATION ID HERE
+                .clientKey(getString(R.string.client_key)) // ⚠️ TYPE IN A VALID CLIENT KEY HERE
                 .clientBuilder(builder)
                 .server("https://parseapi.back4app.com/").build());  // ⚠️ TYPE IN A VALID SERVER URL HERE
     }
